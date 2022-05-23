@@ -1,13 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 :root {
-  /* --color1: #c2faf1; */
-  /* --color1: #ffffff;
-  --color2: #f6f6f6;
-  --color3: #dfeff0;
-  --color4: #e63946;
-  --color4lighter: #e91f30;
-  --color5: #505050;
-  --color6: #5f5f5f; */
   --primary-font: "Poppins";
   --transition-slow: 0.3s;
   --transition-quick: 0.2s;
@@ -91,18 +83,16 @@ button:focus {
 }
 
 footer {
-  background-color: var(--color4);
-  color: var(--color2);
+  background-color: var(--color6);
 }
 
 .footer__header {
-  border-bottom: solid #757575 1px;
+  color: var(--color2);
   margin-bottom: 15px;
 }
 
 .footer_link {
   padding: 3px;
-  border-bottom: solid #8080808e 1px;
 }
 .footer_link > a {
   color: var(--color2);
@@ -179,24 +169,32 @@ footer {
   border-radius: 8px;
   padding: 0;
   margin: 0;
+  width: fit-content;
 }
 
 .email_box input {
   border: none;
   outline: none;
-  border-radius: 8px;
+  border-radius: 8px 0 0 8px;
   padding: 5px;
   color: gray;
+  background: transparent;
+}
+.email_box input:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 .email_box button {
   border: none;
   outline: none;
   height: 100%;
-  padding: 0 30px;
-  border-radius: 0 7px 7px 0;
+  border-radius: 0 8px 8px 0;
   color: white;
   background-color: var(--color4);
+}
+.email_box button:hover {
+  background-color: var(--color4lighter);
 }
 
 .my_dropdown {
