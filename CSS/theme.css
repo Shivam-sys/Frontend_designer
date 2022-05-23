@@ -1,0 +1,43 @@
+:root {
+  /* Light theme colors below */
+  --c1: #fff;
+  --c2: #f6f6f6;
+  --c3: #dfeff0;
+  --c4: #e63946;
+  --c4l: #e91f30;
+  --c5: #505050;
+  --c6: #5f5f5f;
+
+  /* Dark theme colors below */
+  --dc1: #181818;
+  --dc2: #f6f6f6;
+  --dc3: #d5d5d5;
+  --dc4: #e63946;
+  --dc4l: #e91f30;
+  --dc5: #7a7a7a;
+  --dc6: hsl(139, 96%, 10%);
+}
+
+.light-theme {
+  --color1: var(--c1);
+  --color2: var(--c2);
+  --color3: var(--c3);
+  --color4: var(--c4);
+  --color4lighter: var(--c4l);
+  --color5: var(--c5);
+  --color6: var(--c6);
+}
+
+.dark-theme {
+  --color1: var(--dc1);
+  --color2: var(--dc2);
+  --color3: var(--dc3);
+  --color4: var(--dc4);
+  --color4lighter: var(--dc4l);
+  --color5: var(--dc5);
+  --color6: var(--dc6);
+}
+
+* {
+  transition: background-color 0.4s ease, color 0.3s ease;
+}
